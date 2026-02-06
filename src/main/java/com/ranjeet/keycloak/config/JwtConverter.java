@@ -17,6 +17,10 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * this class consume jwt which is issue by keycloak
+ * extract role and other claims then convert this to spring security object
+ */
 @Component
 public class JwtConverter implements Converter<Jwt, AbstractAuthenticationToken> {
 
